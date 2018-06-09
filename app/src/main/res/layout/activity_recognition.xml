@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/ba"
+    tools:context=".activity.RecognitionActivity">
+
+<ImageView
+    android:id="@+id/close"
+    android:layout_width="30dp"
+    android:layout_height="30dp"
+    android:layout_gravity="right"
+    android:layout_margin="15dp"
+    android:src="@drawable/close2"/>
+<RelativeLayout
+    android:paddingTop="50dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_centerHorizontal="true"
+        android:textSize="16sp"
+        android:textColor="#30cccc"
+        android:text="请点击录音按钮，立即为你搜索"/>
+
+    <TextView
+        android:id="@+id/tv_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/text"
+        android:layout_marginTop="40dp"
+/>
+    <com.example.administrator.xfmovie.PowerImageView
+        android:id="@+id/begin_luyin"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="80dp"
+        android:src="@drawable/luyin2"/>
+
+
+    <com.example.administrator.xfmovie.library.WaveView
+        android:id="@+id/wave"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
+</LinearLayout>
